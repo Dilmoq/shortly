@@ -2,7 +2,7 @@ services:
   shortly:
     build: .
     ports:
-      - "8000:8000"
+      - "${SHORTLY_PORT:-8000}:8000"
     environment:
       # Public base URL used when building short links.
       - SHORTLY_BASE_URL=https://links.example.com/

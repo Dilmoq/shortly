@@ -30,6 +30,14 @@ REST API для создания коротких ссылок, перенапр
 | CI | GitHub Actions (3 версии Python, линтер + тесты) |
 | Деплой | Docker / docker-compose |
 
+## Deploy live
+
+The project is deployed on my own VPS with Docker Compose (Ubuntu 24.04):
+- **API**: [http://45.143.203.115:8000](http://45.143.203.115:8000/api/links) — try `POST /api/links` via `/docs`
+- **Docs**: [http://45.143.203.115:8000/docs](http://45.143.203.115:8000/docs) (Swagger UI)
+- The server itself runs [servermon](https://github.com/Dilmoq/servermon) as a systemd service,
+  so CPU/RAM/disk metrics of the host are collected into SQLite, with threshold checks via a timer
+
 ## Быстрый старт
 
 ```bash

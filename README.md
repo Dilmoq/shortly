@@ -1,5 +1,11 @@
 # shortly — сервис сокращения ссылок
 
+![CI](https://github.com/YOUR_USERNAME/shortly/actions/workflows/ci.yml/badge.svg)
+![Python](https://img.shields.io/badge/python-3.11%20%7C%20%203.12%20%7C%203.13-blue.svg?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688.svg?logo=fastapi&logoColor=white)
+![pytest](https://img.shields.io/badge/tests-27%20passed-brightgreen.svg?logo=pytest&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
 REST API для создания коротких ссылок, перенаправления по ним и отслеживания статистики переходов.
 Написано на Python (FastAPI) с использованием SQLite через SQLAlchemy ORM.
 

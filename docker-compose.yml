@@ -1,0 +1,14 @@
+services:
+  shortly:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      # Public base URL used when building short links.
+      - SHORTLY_BASE_URL=https://links.example.com/
+    volumes:
+      - shortly-data:/data
+    restart: unless-stopped
+
+volumes:
+  shortly-data:
